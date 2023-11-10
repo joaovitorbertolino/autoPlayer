@@ -6,4 +6,27 @@
 
 .player {
   width: 60%;
+  box-shadow: 50px;
+}
+.cancelbtn{
+  margin-right: 5px;
+  margin-top: 5px;
+  border: none;
+  background-color: rgb(245, 73, 73);
+  padding: 8px;
+  border-radius: 3px;
+}
+.cancelbtn:hover{
+  background-color: red;
+}
+.changevideobtn{
+  margin-left: 5px;
+  margin-top: 5px;
+  border: none;
+  background-color: rgb(182, 179, 179);
+  padding: 8px;
+  border-radius: 3px;
+}
+.changevideobtn:hover{
+  background-color: grey;
 }
