@@ -5,7 +5,6 @@ const VideoPlayer = () => {
   const videoUrl = [
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-    'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4'
   ];
 
   const [currentVideo, setCurrentVideo] = useState(0);
@@ -19,6 +18,7 @@ const VideoPlayer = () => {
       setShowChangeButton(false);
       startTimer();
       console.log(currentVideo);
+      console.log(currentVideo < videoUrl.length - 1)
     } else {
       alert('Todos os vídeos já foram reproduzidos');
     }
@@ -40,6 +40,7 @@ const VideoPlayer = () => {
     videoRef.current.currentTime = 0;
     videoRef.current.pause();
     setShowChangeButton(false)
+    clearTimeout(cancelTimer);
   };
 
   useEffect(() => {
