@@ -8,7 +8,7 @@ Installing
   git clone https://github.com/joaovitorbertolino/autoPlayer.git
 ```
 
-Runnig autoPlayer with npm
+Running autoPlayer with npm
 ```bash
   npm start
 ```
